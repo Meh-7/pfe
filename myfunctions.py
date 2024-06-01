@@ -65,7 +65,7 @@ def fit_VAR(data, p):
     return residuals, beta
 
 
-def estimate_VAR_ARMA(data, p, residuals): #p = ordre du VAR sur les donnees centrees, necessaire pour les retards et valeurs manquantes des residus
+def estimate_VARMA(data, p, residuals): #p = ordre du VAR sur les donnees centrees, necessaire pour les retards et valeurs manquantes des residus
     T, N = data.shape
     assert N == 2, "This implementation is for bivariate VAR only."
     print(f"T = {T}")
@@ -94,3 +94,8 @@ def estimate_VAR_ARMA(data, p, residuals): #p = ordre du VAR sur les donnees cen
     Phi[0, :] = beta[1,0], beta[1,1]
     Phi[1, :] = beta[2,0], beta[2,1]
     return omega, Theta, Phi
+
+def center_data(data):
+    means = data.mean(axis=0)
+    Y = data - means
+    return Y
