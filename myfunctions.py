@@ -95,7 +95,3 @@ def estimate_VARMA(data, p, residuals): #p = ordre du VAR sur les donnees centre
     Phi[1, :] = beta[2,0], beta[2,1]
     return omega, Theta, Phi
 
-def center_data(data):
-    means = data.mean(axis=0)
-    Y = data - means
-    return Y

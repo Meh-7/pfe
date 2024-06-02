@@ -1,8 +1,9 @@
 import numpy as np
+
 def fit_var(data, p):
     n, k = data.shape
-    X = center_data(data)
-
+    means = data.mean(axis=0) #centrage
+    X = data - means
     #matrice des regresseurs
     Xprime = np.zeros((n - p, k * p))
     X_target = np.zeros((n - p, k))
