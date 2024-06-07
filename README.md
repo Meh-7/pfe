@@ -19,3 +19,27 @@ git ls-tree -r HEAD > folder_structure.txt
 -  bien introduire la section d'estimation, qu'est-ce qu'on va faire, pourqoi etc
 	- ou est-ce qu'on a codé etc, les logiciels utilisés etc
 - utiliser les box plot avec les tableaux pour visualiser l'information
+
+06/06/2024
+- garder a la fin du memoir dans les perspective le cas multivarie et trivarie plus general, les difficulté et le obstacles qui seront rencontrés (peut etre dans les appendices ajouter des simulations et des modeles qui existent?)
+- conclusion dans rapport: 
+	- enlever le "predefini" dans le threshold
+	- ajouter le point de rupture (deux extensions total)
+	- ajouter le cas multivarié
+	- decomposer conclusion(chapitre 3) sous sections bien distingués
+		- etat d'avancement
+		- perspectives
+- notations:
+	- stat: n = taille echantillon, N = replication <- utiliser ca
+	- econometrie: T = taille echantillon
+- il faut savoir concentrer bien sur le pourquoi: pourquoi un certain modele, pourquoi le modele de cui et zhu au lieu de liu, le delta et son importance dans la correlation negative
+- pour commission:
+	- rappel rapide du provleme
+	- etale par chapitre 
+		- chapitre 1 : voila ce qu'on a fait ((2, 3 diapos))
+			- peut etre ajouter un diagramme pour la definition des lois de poisson multivaries (il faut l'ajouter dans le memoir)
+		- chapitre 2: 
+			- voila notre modele, ce qui a ete fait, (cui, liu)
+		- chapitre 3:
+			- simulation
+- figures dans la simulation: caption Y_1(t) , c'est des series chrono, no pas oublier le temps
