@@ -1,3 +1,5 @@
+to get folder structure:
+git ls-tree -r HEAD > folder_structure.txt
 02/06/2024
 - on doit faire varier les n (longeurs des series)
 - utiliser des modeles avec matrices non diagonales
